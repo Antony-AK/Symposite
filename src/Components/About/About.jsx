@@ -28,7 +28,7 @@ const About = () => {
         <div className="content-box relative h-[70vh] w-[80%] flex flex-wrap gap-x-20 gap-y-10  justify-center items-center mx-auto">
           {aboutdata.map((data, index) => (
             <div key={index} className="about-box relative w-96 h-56 bg-darkblue rounded-lg flex justify-center items-center text-center text-main font-medium text-white p-5">
-              <p className='text-lg z-30'>{data.description}</p>
+              <p className='text-lg font-body z-30'>{data.description}</p>
             </div>
           ))}
         </div>

@@ -70,6 +70,8 @@ img {
   }
 }
 
+
+
 @keyframes scroll {
   from {
     transform: translateX(0%);
@@ -82,5 +84,62 @@ img {
 
 .animate-scroll {
   display: flex;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
 }
+
+@property --angle{
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg
+}
+
+.location-map::after, .location-map::before{
+  content: '';
+  position: absolute;
+  width: 104%;
+  height: 104%;
+  background: linear-gradient(var(--angle), #FF3CAC 25%, transparent 50%, #3808c9 100%);
+  z-index: -1;
+  padding: 10px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+
+.location-map::before{
+  filter: blur(1.5rem);
+  opacity: 0.9;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+
+  }
+}
+
+@keyframes bounce-roll {
+  0% {
+      transform: translateY(0) rotate(0deg);
+  }
+  25% {
+      transform: translateY(-60px) rotate(90deg);
+  }
+  50% {
+      transform: translateY(0) rotate(180deg);
+  }
+  75% {
+      transform: translateY(-30px) rotate(270deg);
+  }
+  100% {
+      transform: translateY(0) rotate(360deg);
+  }
+}
+
+.animate-bounce-roll {
+  animation: bounce-roll 3s infinite ease-in-out;
+}
+
+

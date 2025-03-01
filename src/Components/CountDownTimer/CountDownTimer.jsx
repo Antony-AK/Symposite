@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const CountdownTimer = () => {
-    const eventDate = new Date("2025-03-26T00:00:00").getTime();
+    const eventDate = new Date("2025-03-26T09:00:00").getTime();
     const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
 
     useEffect(() => {
@@ -31,7 +31,7 @@ const CountdownTimer = () => {
         <div className="flex space-x-32 text-center mt-4">
             {Object.entries(time).map(([label, value]) => (
                 <div key={label} className="flex flex-col">
-                    <span className="text-xl md:text-6xl font-extrabold text-white 
+                    <span className="text-xl md:text-6xl font-extrabold text-blue-100
   [text-shadow:_0_0_10px_#7B68EE,0_0_20px_#9370DB,0_0_40px_#7B68EE] animate-[bounce_0.5s_infinite_alternate]">
                         {value}
                     </span>
