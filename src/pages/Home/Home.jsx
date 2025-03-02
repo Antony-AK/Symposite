@@ -6,6 +6,8 @@ import Events from '../../Components/Events/Events'
 import Carosal from '../../Components/Carosul/Carosal'
 import Venue from '../../Components/Venue/Venue'
 import Contact from '../../Components/Contact/Contact'
+import Footer from '../../Components/Footer/Footer'
+import OurTeam from '../../Components/OurTeam/OurTeam'
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
         <Events/>
         <Venue/>
         <Contact/>
+        <OurTeam/>
+        <Footer/>
     </div>
   )
 }

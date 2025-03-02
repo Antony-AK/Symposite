@@ -23,16 +23,24 @@ const aboutdata = [
 const About = () => {
   return (
     <div>
-      <div className="about w-full h-full mt-56" id='about'>
+      <div className="about w-full h-full mt-24" id='about'>
         <div className="heading text-white text-center text-4xl font-bold font-main tracking-wider mb-16">About</div>
         <div className="content-box relative h-[70vh] w-[80%] flex flex-wrap gap-x-20 gap-y-10  justify-center items-center mx-auto">
           {aboutdata.map((data, index) => (
             <div key={index} className="about-box relative w-96 h-56 bg-darkblue rounded-lg flex justify-center items-center text-center text-main font-medium text-white p-5">
-              <p className='text-lg font-body z-30'>{data.description}</p>
+              <p className=' text-base sm:text-lg font-body z-30'>{data.description}</p>
             </div>
           ))}
         </div>
       </div>
+
+      <div className="sympovideo w-[90%] md:w-[70%] md:h-[70vh] h-[40vh]  mx-auto mt-[620px] md:mt-20 bg-white rounded-lg p-[8px] relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FF3CAC] to-[#3808c9]  rounded-lg"></div>
+        <div className="relative bg-white h-full w-full rounded-lg">
+          <video src=""></video>
+        </div>
+      </div>
+
 
     </div>
   )
