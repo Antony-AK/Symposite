@@ -1,0 +1,175 @@
+/* ✅ Fullscreen Background */
+.event-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #FF3CAC, #7B3FE4, #7B3FE4, #2996C2, #FF8C42);
+    background-size: 400% 400%;
+    animation: moveGradient 8s linear infinite, pulseBrightness 6s ease-in-out infinite;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* ✅ Positioning for Finisher Header */
+.finisher-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Below content */
+}
+
+/* Keyframes for Moving Gradient */
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ✅ Glassmorphic Frame */
+.event-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    max-width: 800px;
+    min-height: 60vh;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 1; /* Above the background */
+}
+
+/* ✅ Centered Title */
+.event-name {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ✅ Align Rules & Text to Left */
+.event-middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* ✅ Rules Title */
+.event-rules-title {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* ✅ Rules List */
+.event-rules-list {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.rule-item {
+    font-size: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rule-item:hover {
+    transform: translateX(15px) scale(1.05);
+}
+
+/* ✅ Register Button */
+.register-button {
+    background: #6834c2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 90% 100%, 0% 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.register-button:hover {
+    background-color:#f71fc4;
+    filter: brightness(0.9);
+    transform: scale(1.05);
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 900px) {
+    .event-frame {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .event-frame {
+        width: 90%;
+        padding: 15px;
+    }
+    .event-name {
+        font-size: 28px;
+    }
+}
+
+/* ✅ Adjustments for sm (375px) */
+@media screen and (max-width: 400px) {
+    .event-frame {
+        width: 95%;
+        padding: 10px 20px 10px 10px;
+        height: 75vh; /* Adjusted for proper height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow-y:auto;
+    }
+    
+    .event-name {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 150px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        padding: 10px;
+    }
+
+    .event-rules-title {
+        font-size: 18px;
+    }
+
+    .rule-item {
+        font-size: 15px;
+    }
+
+    .rule-item:hover {
+        transform: translateX(8px) scale(1.03);
+    }
+
+    .register-button {
+        font-size: 16px;
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
+}
+

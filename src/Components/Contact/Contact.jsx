@@ -4,10 +4,10 @@ const Contact = () => {
     return (
         <div>
             <div className="contact mt-24 px-4 sm:px-6" id='contact'> 
-                <div className="heading text-white text-center text-3xl sm:text-4xl font-bold font-main tracking-wider mb-12 sm:mb-16">Contact</div>
+                <div className="heading text-white text-center text-3xl sm:text-4xl font-bold font-main tracking-wider mb-12 sm:mb-16" data-aos="fade-up" data-aos-duration="1200">Contact</div>
 
                 <div className="flex flex-col md:flex-row relative bg-darkblue text-white py-12 px-6 sm:py-16 sm:px-8 md:px-20 shadow-xl overflow-hidden">
-                    <div className="md:w-1/2 mb-8 md:mb-0">
+                    <div className="md:w-1/2 mb-8 md:mb-0" data-aos="zoom-in" data-aos-duration="1300">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gradient mb-4">
                             Reach Out to Us 📩
                         </h2>

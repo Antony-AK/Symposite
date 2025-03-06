@@ -10,7 +10,7 @@ const teamMembers = [
 export default function OurTeam() {
   return (
     <div className="relative bg-gray-900 py-12 md:w-[80%] mx-auto md:h-[180px]  text-white text-center mt-14 rounded-2xl shadow-2xl">
-      <h2 className="text-2xl font-bold mb-6 -mt-7 text-gradient">Development Team</h2>
+      <h2 className="text-2xl font-bold mb-6 -mt-7 text-gradient" >Development Team</h2>
       <div className="flex flex-wrap justify-center items-center gap-8">
         {teamMembers.map((member, index) => (
           <motion.div

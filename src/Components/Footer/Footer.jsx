@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-gray-300 mt-6 border-t border-gray-400 pt-4">
+        <div className="text-gray-300 mt-6 border-t border-gray-400 pt-4" >
           &copy; {new Date().getFullYear()} Tech Olympics'25. All rights reserved.
         </div>
       </div>
