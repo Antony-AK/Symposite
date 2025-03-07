@@ -12,8 +12,10 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    AOS.init(); 
-   }, []);
+    AOS.init({
+      once: true, 
+    });
+  }, []);
 
   return (
     <>

@@ -23,9 +23,17 @@ module.exports = {
       boxShadow: {
         "neon": "0 0 10px #00f, 0 0 20px #0ff, 0 0 40px #00f",
       },
+      keyframes: {
+        shine: {
+          "0%": { transform: "translateX(-100%) rotate(10deg)" },
+          "100%": { transform: "translateX(250%) rotate(10deg)" }
+        }
+      },
+      animation: {
+        shine: "shine 2s infinite linear"
+      }
     },
   },
   plugins: [
-    // require('tailwind-scrollbar-hide')
   ],
 }

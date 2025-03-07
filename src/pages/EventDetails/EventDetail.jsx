@@ -58,7 +58,6 @@ function EventDetail() {
     };
   }, []);
 
-  console.log("Slug from URL:", slug);  // Debugging
 
 
   const event = eventRules.find((event) => event.key === slug);
@@ -67,7 +66,7 @@ function EventDetail() {
     <div className="event-container">
       <div className="finisher-header"></div> 
 
-      <div ref={tiltRef} className="event-frame">
+      <div ref={tiltRef} className="event-frame"  data-aos="zoom-in" data-aos-duration="1200">
         {event ? (
           <div className="event-content">
             <div className="event-top">

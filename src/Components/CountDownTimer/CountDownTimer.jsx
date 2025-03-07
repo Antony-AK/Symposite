@@ -28,14 +28,14 @@ const CountdownTimer = () => {
     return (
 
 
-        <div className="flex ms-4 md:ms-0 space-x-4 md:space-x-32 text-center mt-4">
+        <div className="flex ms-4 md:ms-0 space-x-4 md:space-x-32 text-center mt-3">
             {Object.entries(time).map(([label, value]) => (
                 <div key={label} className="flex flex-col">
                     <span className="text-3xl md:text-6xl font-extrabold text-blue-100
   [text-shadow:_0_0_10px_#7B68EE,0_0_20px_#9370DB,0_0_40px_#7B68EE] animate-[bounce_0.5s_infinite_alternate]">
                         {value}
                     </span>
-                    <span className="text-sm md:text-lg mt-3 mb-2 text-black font-base font-semibold uppercase">{label}</span>
+                    <span className="text-sm md:text-lg mt-2 mb-2 text-white font-base font-semibold uppercase">{label}</span>
                 </div>
             ))}
         </div>
