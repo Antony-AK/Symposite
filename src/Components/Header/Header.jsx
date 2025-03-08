@@ -8,10 +8,11 @@ const Header = () => {
       
       {/* Background GIF */}
       <img
-        src="https://res.cloudinary.com/dgrkxzvn1/video/upload/ac_none,f_gif,q_auto/v1741449372/5453622-uhd_3840_2160_24fps_kizesl.gif"
-        alt="Background animation"
-        className="absolute w-full h-full object-cover"
-      />
+  src="/video/headervideo2.gif"
+  alt="Background animation"
+  className="absolute w-full h-full object-cover"
+/>
+
 
       {/* Logo */}
       <div 
