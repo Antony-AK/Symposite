@@ -66,7 +66,7 @@ function EventDetail() {
    
       <div className="finisher-header"></div> 
 
-      <div ref={tiltRef} className="event-frame" data-aos="zoom-in" data-aos-duration="1200">
+      <div ref={tiltRef} className="event-frame" data-aos="zoom-in" data-aos-duration="500">
         {event ? (
           <div className="event-content">
              <button className="back-button absolute top-6 text-lg  hover:scale-105  hidden md:block" onClick={() => navigate(-1)} aria-label="Go back" role="button">

@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import sympovid from "../../assets/images/Sympo 25.mp4";
 
 const aboutdata = [
   {
@@ -22,7 +21,7 @@ const aboutdata = [
 
 const About = () => {
   const videoRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(true); // Default muted
+  const [isMuted, setIsMuted] = useState(true); 
 
   const toggleMute = () => {
     if (videoRef.current) {
@@ -46,24 +45,21 @@ const About = () => {
         </div>
       </div>
 
-      {/* Symposium Video Section */}
       <div className="sympovideo w-[90%] md:w-[70%] md:h-[80vh] h-[28vh] mx-auto mt-[540px] md:mt-20 bg-white rounded-lg p-[8px] relative">
-        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#FF3CAC] to-[#3808c9] rounded-lg"></div>
 
-        {/* Video Container */}
         <div className="relative bg-white h-full w-full rounded-lg overflow-hidden" data-aos="zoom-up-out" data-aos-duration="1000">
           <video 
             ref={videoRef} 
             className="w-full h-full object-cover rounded-lg" 
             autoPlay 
             loop 
-            muted={isMuted} // Controlled by state
+            muted={isMuted} 
+            preload="metadata"
             playsInline 
-            src={sympovid}>
+            src="/video/Sympo 25.mp4">
           </video>
 
-          {/* Mute/Unmute Button */}
           <button 
             onClick={toggleMute} 
             className="absolute bottom-5 right-5 bg-black bg-opacity-10 text-white px-4 py-2 rounded-lg text-sm md:text-lg transition-transform hover:scale-105"
