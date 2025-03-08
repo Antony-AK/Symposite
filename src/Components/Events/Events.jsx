@@ -1,23 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import tech from '../../assets/images/tech.jpg';
-import paperpres from '../../assets/images/paperpres.jpg';
+import paperpres from '../../assets/images/fusionpitch.jpg';
+import bulb from '../../assets/images/paperpres.jpg';
 import datathon from '../../assets/images/datathon.png';
-import tresurehunt from '../../assets/images/treasure_hunt.jpg';
-import addsup from '../../assets/images/addsup.jfif.jpg';
-import poster from '../../assets/images/Tech (2).png';
-import projectexpo from '../../assets/images/project_expo.png';
+import quiz from '../../assets/images/quiz.jpeg.jpg';
+import codewars from '../../assets/images/code-wars.png';
+import connections from '../../assets/images/connections.jpg';
+import ipl from '../../assets/images/IPL.jpeg.jpg';
 import desinathon from '../../assets/images/desinathon.jpg';
 
 const events = [
-  { id: 1, title: "Tech Connections", slug: "tech-connections", image: tech },
+  { id: 1, title: "Code Wars", slug: "code-wars", image: codewars },
   { id: 2, title: "Paper Presentation", slug: "paper-presentation", image: paperpres },
   { id: 3, title: "Datathon", slug: "datathon", image: datathon },
-  { id: 4, title: "Tech Treasure Hunt", slug: "tech-treasure-hunt", image: tresurehunt },
-  { id: 5, title: "Addsup", slug: "adds-up", image: addsup },
-  { id: 6, title: "Poster Making", slug: "poster-making", image: poster },
-  { id: 7, title: "Project Expo", slug: "project-expo", image: projectexpo },
+  { id: 4, title: "Tech Quiz", slug: "tech-quiz", image: quiz },
+  { id: 5, title: "Connexions", slug: "connexions", image: connections },
+  { id: 6, title: "Fusion Pitch", slug: "fusion-pitch", image: bulb },
+  { id: 7, title: "Investment Premier League (IPL)", slug: "ipl", image: ipl },
   { id: 8, title: "Designathon", slug: "designathon", image: desinathon },
 ];
 

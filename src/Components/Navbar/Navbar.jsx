@@ -51,7 +51,7 @@ const Navbar = () => {
             </li>
             <button className="relative overflow-hidden bg-purple-500/70 text-white px-5 py-2 font-semibold rounded-full shadow-lg transition-all duration-300 hover:scale-95 hover:shadow-xl">
               <span className="relative z-10 font-bold">Register</span>
-              <span className="absolute inset-0  left-[-10%] w-10 h-[140%] bg-gradient-to-r from-transparent via-white/60 to-transparent translate-x-[-100%] rotate-12 animate-shine"></span>
+              <span className="absolute -top-2 inset-0  left-[-10%] w-10 h-[140%] bg-gradient-to-r from-transparent via-white/60 to-transparent translate-x-[-100%] rotate-12 animate-shine"></span>
             </button>
           </ul>
         </div>

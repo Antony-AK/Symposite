@@ -1,4 +1,5 @@
 import React from 'react'
+import sympovid from "../../assets/images/Sympo 25.mp4"
 
 const aboutdata = [
   {
@@ -34,10 +35,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="sympovideo w-[90%] md:w-[70%] md:h-[70vh] h-[40vh]  mx-auto mt-[620px] md:mt-20 bg-white rounded-lg p-[8px] relative">
+      <div className="sympovideo w-[90%] md:w-[70%] md:h-[80vh] h-[40vh]  mx-auto mt-[620px] md:mt-20 bg-white rounded-lg p-[8px] relative">
         <div className="absolute inset-0 bg-gradient-to-r from-[#FF3CAC] to-[#3808c9]  rounded-lg"></div>
         <div className="relative bg-white h-full w-full rounded-lg" data-aos="zoom-up-out" data-aos-duration="1000">
-          <video src=""></video>
+          <video className='w-full h-full object-cover' autoPlay muted loop src={sympovid}></video>
         </div>
       </div>
 

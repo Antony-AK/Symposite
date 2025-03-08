@@ -4,10 +4,10 @@ const Contact = () => {
     return (
         <div>
             <div className="contact mt-24 px-4 sm:px-6" id='contact'> 
-                <div className="heading text-white text-center text-3xl sm:text-4xl font-bold font-main tracking-wider mb-12 sm:mb-16" data-aos="fade-up" data-aos-duration="1200">Contact</div>
+                <div className="heading text-white text-center text-3xl sm:text-4xl font-bold font-main tracking-wider mb-12 sm:mb-16" data-aos="fade-up" data-aos-duration="1000">Contact</div>
 
                 <div className="flex flex-col md:flex-row relative bg-darkblue text-white py-12 px-6 sm:py-16 sm:px-8 md:px-20 shadow-xl overflow-hidden">
-                    <div className="md:w-1/2 mb-8 md:mb-0" data-aos="zoom-in" data-aos-duration="1300">
+                    <div className="md:w-1/2 mb-8 md:mb-0" data-aos="zoom-in" data-aos-duration="2000">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gradient mb-4">
                             Reach Out to Us 📩
                         </h2>
@@ -16,13 +16,13 @@ const Contact = () => {
                         </p>
                         <div className="space-y-4 text-sm sm:text-lg">
                             <div className="flex items-center space-x-2 sm:space-x-4">
-                                <span> 📞  +91 9360877226,  +91 8838931843</span>
+                                <span> 📞  +91 8838931843 (Karthikeyan B),  +91 9360877226 (Sam Robin Singh E)</span>
                             </div>
                             <div className="flex items-center space-x-2 sm:space-x-4">
-                                <span> 📧   techolympicsfx@gmail.com</span>
+                                <span> 📧  techolympicsfx@gmail.com</span>
                             </div>
                             <div className="flex items-center space-x-2 sm:space-x-4">
-                                <span> 📍   103/G2, By pass Road, Vannarpet, Tirunelveli, Tamil Nadu 627003</span>
+                                <span> 📍  103/G2, By pass Road, Vannarpet, Tirunelveli, Tamil Nadu 627003</span>
                             </div>
                         </div>
                     </div>

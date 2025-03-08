@@ -21,12 +21,12 @@ const Venue = () => {
                                 <p>Tirunelveli, Tamil Nadu, 627003</p>
                             </div>
                         </div>
-                        <div className="email-details text-base sm:text-lg flex flex-col sm:flex-row gap-6 sm:gap-11">
+                        <div className="email-details text-base sm:text-lg flex flex-col sm:flex-row gap-6 sm:gap-12">
                             <div className="venue-head flex gap-2">
                                 <p>📧</p>
                                 <p className='text-purple-500 font-semibold'>Email</p>
                             </div>
-                            <p>techolympicsfx@gmail.com</p>
+                            <p className=''>techolympicsfx@gmail.com</p>
                         </div>
                         <div className="phone-no-details text-base sm:text-lg flex flex-col sm:flex-row gap-4 sm:gap-6">
                             <div className="contact-head flex gap-2">
@@ -34,13 +34,13 @@ const Venue = () => {
                                 <p className='text-purple-500 font-semibold'>Contact</p>
                             </div>
                             <div className="coordinator-info">
-                                <p className='font-main'>+91 96005 63323 (Mrs Poornam S)</p>
+                                <p className='font-main'>+91 8838931843 (Karthikeyan B)</p>
                             </div>
                         </div>
-                        <div className="timing-details text-base sm:text-lg flex flex-col sm:flex-row gap-4 sm:gap-8">
+                        <div className="timing-details text-base sm:text-lg flex flex-col sm:flex-row gap-5 sm:gap-9">
                             <div className="timing-head flex gap-2">
                                 <p>🕒</p>
-                                <p className='text-purple-500 font-semibold'>Timing</p>
+                                <p className='text-purple-500 font-semibold '>Timing</p>
                             </div>
                             <p>Monday to Saturday | 9:00 AM - 4:00 PM</p>
                         </div>

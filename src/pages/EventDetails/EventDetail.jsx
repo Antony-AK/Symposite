@@ -17,11 +17,11 @@ function EventDetail() {
       if (window.FinisherHeader) {
         new window.FinisherHeader({
           count: 6,
-          size: { min: 500, max: 700, pulse: 0 },
+          size: { min: 700, max: 1400, pulse: 0 },
           speed: { x: { min: 5, max: 5 }, y: { min: 5, max: 5 } },
           colors: {
             background: "transparent",
-            particles: ["", "#fd68da", "#3808c9", ""]
+            particles: ["#000000", "#fd68da", "#3808c9", "#9370db"]
           },
           blending: "lighten",
           opacity: { center: 0.6, edge: 0 },

@@ -1,8 +1,8 @@
 const eventRules = [
     {
         id: 1,
-        name: "Tech Connections",
-        key: "tech-connections",
+        name: "Code Wars",
+        key: "code-wars",
         rules: [
             "Team Size: Each team must have 2-3 members.",
             "Rounds: The event consists of three rounds, each different levels of technical knowledge and logical reasoning.",
@@ -31,8 +31,8 @@ const eventRules = [
     },  
     {
         id: 3,
-        name: "Tech Treasure Hunt",
-        key: "tech-treasure-hunt",
+        name: "Tech Quiz",
+        key: "tech-quiz",
         rules: [
             "Team Size: Each team must have 2-3 members.",
             "Rounds: The competition consists of multiple rounds, each leading teams closer to the final treasure.",
@@ -61,8 +61,8 @@ const eventRules = [
     },
     {
         id: 5,
-        name: "Poster Making",
-        key: "poster-making",
+        name: "Connexions",
+        key: "connexions",
         rules: [
             "Team Size: Each team can have up to 2 members.",
             "Software Requirement: Posters must be designed using digital tools.",
@@ -76,8 +76,8 @@ const eventRules = [
     },
     {
         id: 6,
-        name: "AddsUp",
-        key: "adds-up",
+        name: "Fusion Pitch",
+        key: "fusion-pitch",
         rules: [
             "Team Size: Each team can have up to 4 members.",
             "Concept: Teams must create and present an advertisement for a given product or theme.",
@@ -92,8 +92,8 @@ const eventRules = [
     },
     {
         id: 7,
-        name: "Project Expo",
-        key: "project-expo",
+        name: "Investment Premier League",
+        key: "ipl",
         rules: [
             "Team Size: Each team can have up to 3 members.",
             "Project Type: Projects can be software-based, hardware-based, or a combination of both must present a working demo of their project to the judges..",

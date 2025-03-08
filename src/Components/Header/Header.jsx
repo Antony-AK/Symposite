@@ -26,7 +26,7 @@ const Header = () => {
           </p>
         </div>
 
-        <div data-aos="flip-down" data-aos-duration="1700" className="countdownbox w-[85%] md:w-[70%] h-[100px] md:h-[120px] rounded-sm bg-black/30 flex justify-center items-center absolute mt-[14rem] md:mt-[24rem] shadow-[-5px_5px_0px_rgba(240,46,170,0.4),5px_5px_0px_rgba(240,46,170,0.4),-10px_10px_0px_rgba(240,46,170,0.3),10px_10px_0px_rgba(240,46,170,0.3),-15px_15px_0px_rgba(240,46,170,0.2),15px_15px_0px_rgba(240,46,170,0.2),-20px_20px_0px_rgba(240,46,170,0.1),20px_20px_0px_rgba(240,46,170,0.1),-25px_25px_0px_rgba(240,46,170,0.05),25px_25px_0px_rgba(240,46,170,0.05)]">
+        <div data-aos="flip-down" data-aos-duration="1700" className="countdownbox w-[85%] md:w-[65%] h-[100px] md:h-[120px] rounded-sm bg-black/30 flex justify-center items-center absolute mt-[14rem] md:mt-[24rem] shadow-[-5px_5px_0px_rgba(240,46,170,0.4),5px_5px_0px_rgba(240,46,170,0.4),-10px_10px_0px_rgba(240,46,170,0.3),10px_10px_0px_rgba(240,46,170,0.3),-15px_15px_0px_rgba(240,46,170,0.2),15px_15px_0px_rgba(240,46,170,0.2),-20px_20px_0px_rgba(240,46,170,0.1),20px_20px_0px_rgba(240,46,170,0.1),-25px_25px_0px_rgba(240,46,170,0.05),25px_25px_0px_rgba(240,46,170,0.05)]">
           <CountdownTimer />
         </div>
 
