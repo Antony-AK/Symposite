@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import paperpres from '../../assets/images/fusionpitch.jpg';
-import bulb from '../../assets/images/paperpres.jpg';
+import ideas from '../../assets/images/idea.jpg';
 import datathon from '../../assets/images/datathon.png';
 import quiz from '../../assets/images/quiz.jpeg.jpg';
 import codewars from '../../assets/images/code-wars.png';
@@ -16,7 +16,7 @@ const events = [
   { id: 3, title: "Datathon", slug: "datathon", image: datathon },
   { id: 4, title: "Tech Quiz", slug: "tech-quiz", image: quiz },
   { id: 5, title: "Connexions", slug: "connexions", image: connections },
-  { id: 6, title: "Fusion Pitch", slug: "fusion-pitch", image: bulb },
+  { id: 6, title: "Fusion Pitch", slug: "fusion-pitch", image: ideas },
   { id: 7, title: "Investment Premier League (IPL)", slug: "ipl", image: ipl },
   { id: 8, title: "Designathon", slug: "designathon", image: desinathon },
 ];
