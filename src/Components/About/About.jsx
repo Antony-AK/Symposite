@@ -47,7 +47,7 @@ const About = () => {
       </div>
 
       {/* Symposium Video Section */}
-      <div className="sympovideo w-[90%] md:w-[70%] md:h-[80vh] h-[28vh] mx-auto mt-[580px] md:mt-20 bg-white rounded-lg p-[8px] relative">
+      <div className="sympovideo w-[90%] md:w-[70%] md:h-[80vh] h-[28vh] mx-auto mt-[540px] md:mt-20 bg-white rounded-lg p-[8px] relative">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#FF3CAC] to-[#3808c9] rounded-lg"></div>
 

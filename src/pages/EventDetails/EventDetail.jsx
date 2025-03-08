@@ -90,7 +90,14 @@ function EventDetail() {
 
         <div className="event-bottom">
           <button className="register-button mt-5" aria-label="Register for event" role="button">
-            Register Now
+          <a
+              href="https://forms.gle/FJ8RrP9WGk9UYZrz8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative z-10 font-bold"
+            >
+              Register
+            </a>
           </button>
         </div>
       </div>
