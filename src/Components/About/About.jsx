@@ -1,5 +1,5 @@
-import React from 'react'
-import sympovid from "../../assets/images/Sympo 25.mp4"
+import React, { useRef, useState } from 'react';
+import sympovid from "../../assets/images/Sympo 25.mp4";
 
 const aboutdata = [
   {
@@ -18,33 +18,62 @@ const aboutdata = [
     id: 4,
     description: 'This year, we’re going even bigger! Expect thrilling competitions, greater rewards, and an electrifying atmosphere that fuels your passion. Get ready for an unforgettable experience!',
   }
-
-]
+];
 
 const About = () => {
+  const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true); // Default muted
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <div>
-      <div className="about w-full h-full mt-24" id='about'>
-        <div className="heading text-white text-center text-4xl font-bold font-main tracking-wider mb-16" data-aos="fade-up" data-aos-duration="1200">About</div>
-        <div className="content-box relative h-[70vh] w-[80%] flex flex-wrap gap-x-20 gap-y-10  justify-center items-center mx-auto" >
+      <div className="about w-full h-full mt-24" id="about">
+        <div className="heading text-white text-center text-4xl font-bold font-main tracking-wider mb-16" data-aos="fade-up" data-aos-duration="1200">
+          About
+        </div>
+        <div className="content-box relative h-[70vh] w-[80%] flex flex-wrap gap-x-20 gap-y-10 justify-center items-center mx-auto">
           {aboutdata.map((data, index) => (
             <div key={index} className="about-box relative w-96 h-56 bg-darkblue rounded-lg flex justify-center items-center text-center text-main font-medium text-white p-5" data-aos="flip-up" data-aos-duration="1000">
-              <p className=' text-base sm:text-lg font-body z-30'>{data.description}</p>
+              <p className="text-base sm:text-lg font-body z-30">{data.description}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="sympovideo w-[90%] md:w-[70%] md:h-[80vh] h-[40vh]  mx-auto mt-[620px] md:mt-20 bg-white rounded-lg p-[8px] relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FF3CAC] to-[#3808c9]  rounded-lg"></div>
-        <div className="relative bg-white h-full w-full rounded-lg" data-aos="zoom-up-out" data-aos-duration="1000">
-          <video className='w-full h-full object-cover' autoPlay muted loop src={sympovid}></video>
+      {/* Symposium Video Section */}
+      <div className="sympovideo w-[90%] md:w-[70%] md:h-[80vh] h-[28vh] mx-auto mt-[580px] md:mt-20 bg-white rounded-lg p-[8px] relative">
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FF3CAC] to-[#3808c9] rounded-lg"></div>
+
+        {/* Video Container */}
+        <div className="relative bg-white h-full w-full rounded-lg overflow-hidden" data-aos="zoom-up-out" data-aos-duration="1000">
+          <video 
+            ref={videoRef} 
+            className="w-full h-full object-cover rounded-lg" 
+            autoPlay 
+            loop 
+            muted={isMuted} // Controlled by state
+            playsInline 
+            src={sympovid}>
+          </video>
+
+          {/* Mute/Unmute Button */}
+          <button 
+            onClick={toggleMute} 
+            className="absolute bottom-5 right-5 bg-black bg-opacity-10 text-white px-4 py-2 rounded-lg text-sm md:text-lg transition-transform hover:scale-105"
+            aria-label={isMuted ? "Unmute video" : "Mute video"}>
+            {isMuted ? "🔇" : "🔊"}
+          </button>
         </div>
       </div>
-
-
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

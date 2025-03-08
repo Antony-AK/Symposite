@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import eventRules from "../../assets/data";
 import { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
@@ -6,6 +6,7 @@ import "./EventDetail.css";
 
 function EventDetail() {
   const { slug } = useParams();
+  const navigate = useNavigate(); // Hook for navigation
   const tiltRef = useRef(null);
 
   useEffect(() => {
@@ -58,17 +59,19 @@ function EventDetail() {
     };
   }, []);
 
-
-
   const event = eventRules.find((event) => event.key === slug);
 
   return (
     <div className="event-container">
+   
       <div className="finisher-header"></div> 
 
-      <div ref={tiltRef} className="event-frame"  data-aos="zoom-in" data-aos-duration="1200">
+      <div ref={tiltRef} className="event-frame" data-aos="zoom-in" data-aos-duration="1200">
         {event ? (
           <div className="event-content">
+             <button className="back-button absolute top-6 text-lg  hover:scale-105  hidden md:block" onClick={() => navigate(-1)} aria-label="Go back" role="button">
+            ⬅ Back
+          </button>
             <div className="event-top">
               <h1 className="event-name">{event.name}</h1>
             </div>
@@ -87,7 +90,7 @@ function EventDetail() {
 
         <div className="event-bottom">
           <button className="register-button mt-5" aria-label="Register for event" role="button">
-              Register Now
+            Register Now
           </button>
         </div>
       </div>

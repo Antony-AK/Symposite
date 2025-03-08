@@ -49,10 +49,20 @@ const Navbar = () => {
             <li className="mx-2 menu transition-all duration-300 hover:scale-105 hover:opacity-80" data-aos="fade-up" data-aos-duration="1200">
               <a href="#contact">Contact</a>
             </li>
-            <button className="relative overflow-hidden bg-purple-500/70 text-white px-5 py-2 font-semibold rounded-full shadow-lg transition-all duration-300 hover:scale-95 hover:shadow-xl">
-              <span className="relative z-10 font-bold">Register</span>
-              <span className="absolute -top-2 inset-0  left-[-10%] w-10 h-[140%] bg-gradient-to-r from-transparent via-white/60 to-transparent translate-x-[-100%] rotate-12 animate-shine"></span>
+            <button
+              className="relative overflow-hidden bg-purple-500/70 text-white px-5 py-2 font-semibold rounded-full shadow-lg transition-all duration-300 hover:scale-95 hover:shadow-xl"
+            >
+              <a
+                href="https://forms.gle/FJ8RrP9WGk9UYZrz8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative z-10 font-bold"
+              >
+                Register
+              </a>
+              <span className="absolute -top-2 inset-0 left-[-10%] w-10 h-[140%] bg-gradient-to-r from-transparent via-white/60 to-transparent translate-x-[-100%] rotate-12 animate-shine"></span>
             </button>
+
           </ul>
         </div>
 
@@ -60,7 +70,6 @@ const Navbar = () => {
           {menuOpen ? <FiX /> : <FiMenu />}
         </div>
 
-        {/* Mobile Menu */}
         <div
           className={`absolute top-14 right-0 w-[100%] mx-auto bg-white/10 backdrop-blur-md text-white rounded-lg flex flex-col items-center space-y-5 py-6 transition-transform duration-500 ease-in-out shadow-lg border border-white/20 
           ${menuOpen ? 'translate-x-0 opacity-100' : 'translate-x-[100%] opacity-0'} md:hidden`}

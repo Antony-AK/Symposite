@@ -34,7 +34,7 @@ const EventsSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="relative bg-white/10 backdrop-blur-lg p-6 rounded-2xl text-white cursor-pointer transition-all overflow-hidden shadow-lg border border-gray-600 hover:border-[#fd68da] hover:shadow-[#fd68da]"
               >
-                <div className="relative overflow-hidden rounded-xl">
+                <div className="relative overflow-hidden rounded-xl" data-aos="flip-right" data-aos-duration="1200">
                   <img src={event.image} alt={event.title} className="w-full h-44 object-cover rounded-xl transition-transform duration-500 hover:scale-110" />
                   <div className="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center py-2 text-lg font-semibold">{event.title}</div>
                 </div>
