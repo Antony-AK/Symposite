@@ -96,7 +96,7 @@ function EventDetail() {
               rel="noopener noreferrer"
               className="relative z-10 font-bold"
             >
-              Register
+              REGISTER NOW
             </a>
           </button>
         </div>
