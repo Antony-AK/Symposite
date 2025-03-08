@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div>
       <div className="header relative w-full  h-[800px] flex justify-center items-center" id="home">
-        <video autoPlay muted loop preload="metadata" src="/video/headerv1.mp4" className="w-full h-full object-cover" data-aos="zoom-up-out" data-aos-duration="500"></video>
+        <video autoPlay muted loop preload="metadata" src="/video/headerv1.webm" className="w-full h-full object-cover" data-aos="zoom-up-out" data-aos-duration="500"></video>
 
         <div className="sympologo absolute w-48 h-48 md:w-72 md:h-72 z-20 rounded-full -mt-[24rem] md:-mt-[25rem]" data-aos="zoom-in" data-aos-duration="1000">
           <img src={sympologo1} alt="" className="rounded-full w-full h-full" />
